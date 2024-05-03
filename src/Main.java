@@ -45,7 +45,8 @@ public class Main {
         int allPlaces = 102;
         int seat = 60;
         int stand = allPlaces - seat;
-        int standFree = allPlaces - seat - (allPlaces - passengers) - stand;
+        int standSold= passengers - seat;
+        int standFree = stand - standSold;
         int seatFree = seat - passengers;
         int freePlaces = allPlaces - passengers;
 
